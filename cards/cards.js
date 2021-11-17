@@ -49,10 +49,12 @@ Once you have both cards, console.log the values and suits of *both cards.
 
 
 
-/*
-Generate angle between 311 and 39 degrees 
-*/
+/********************************************************
+ * Build an HTML page that lets you draw cards from a deck. When the page loads, go to the Deck of Cards API to create a new deck, and show a button on the page that will let you draw a card. Every time you click the button, display a new card, until there are no cards left in the deck.
+ ********************************************************/
+
 function getRandomAngle() {
+    //Generate angle between -39 and 39 degrees 
     const rotation = Math.floor(Math.random() * 40);
     const sign = Math.floor(Math.random() * 2)
     if (sign === 0) {
@@ -62,10 +64,8 @@ function getRandomAngle() {
     }
 }
 
-/*
-Generate small (+/- 24px) shift
-*/
 function getRandomTranslation() {
+    // Generate small (+/- 24px) shift
     const translation = Math.floor(Math.random() * 25);
     const sign = Math.floor(Math.random() * 2)
     if (sign === 0) {
